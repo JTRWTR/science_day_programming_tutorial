@@ -6,17 +6,39 @@ public class ScienceDay04 {
 
         // 4-1 条件（数値の大小）によって処理を制御しよう
         // ここに書く
+        int num;
+        num = 7;
+
+        if (num > 3) { // 「numが3より大きいなら」
+            System.out.println(num + "は、3より大きい数値です");
+        }
 
 
 
         // 4-2 条件に満たさない場合の処理も書いてみよう
         // ここに書く
+        if (num < 3) { // 「numが3より小さいなら」
+            System.out.println(num + "は、3より小さい数値です");
+        }else{ // 「それ以外なら」
+            System.out.println(num + "は、3より小さい数値ではありません");
+        }
 
 
 
         // チャレンジ問題
         // 今日の天気によって、表示させるメッセージを変えてみよう。
         // ここに書く
+        String weather;
+        weather = "Rainy"; // ["Sunny", "Cloudy", "Rainy", その他適当な文字列]　に変更して実行してみよう
+        if (weather.equals("Sunny")) {
+            System.out.println("今日の天気は、晴れです");
+        }else if (weather.equals("Cloudy")){
+            System.out.println("今日の天気は、曇りです");
+        }else if (weather.equals("Rainy")){
+            System.out.println("今日の天気は、雨です");
+        }else{
+            System.out.println("今日の天気は、わかりません");
+        }
 
 
 
